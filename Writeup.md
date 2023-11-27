@@ -15,10 +15,10 @@
 ![image](https://github.com/BuiDuyet/ransom_DigitalDragonsCTF_2023/assets/135353207/28cf122e-e6b2-45d2-8d94-2a932b2dd50e)
 ![image](https://github.com/BuiDuyet/ransom_DigitalDragonsCTF_2023/assets/135353207/d30f2ba3-c416-46a1-908a-40c270fbd73c)
 6. Nhận thấy đây là một chuỗi hex encoded, mỗi cặp ký tự hex biểu diễn một byte (8 bit) dữ liệu. Để phân tích nó, chúng ta có thể giải mã từng byte, để giải mã nhanh chóng, ta cần chuyển đổi chuỗi hex này sang các byte dữ liệu gốc. Trong Python, có thể sử dụng hàm bytes.fromhex() để thực hiện việc này:
----- file encode pdf
+---- [Code](https://github.com/BuiDuyet/ransom_DigitalDragonsCTF_2023/blob/main/solve.py)
 7. Và đây là kết quả khi ta encode được:
 ![image](https://github.com/BuiDuyet/ransom_DigitalDragonsCTF_2023/assets/135353207/279eade3-3bb2-4146-952b-89804ef2e463)
----- Chèn thêm file encode
+---- [Result](https://github.com/BuiDuyet/ransom_DigitalDragonsCTF_2023/blob/main/output.pdf)
 8. Còn flag 2 ta check tiếp file upload(1).php
 ![image](https://github.com/BuiDuyet/ransom_DigitalDragonsCTF_2023/assets/135353207/213ae06e-19a8-4dea-aecb-b3d6fe219059)
   Cũng vẫn là 1 file đã được upload
@@ -28,7 +28,7 @@
 10. Được một folder secret-2
 ![image](https://github.com/BuiDuyet/ransom_DigitalDragonsCTF_2023/assets/135353207/a580d50a-936d-487a-bb1f-3033fedd37bc)
 11. Trong folder này chứa 1024 ảnh được đánh số từ 1 -> 1024, và mỗi bức ảnh chỉ chứa những đường trắng đen, nghi ngờ đây là một file ảnh được tách thành 1024 mảnh ghép, giờ ta chỉ cần code một đoạn code để có thể ghép 1024 ảnh lại với nhau
----- code ghép ảnh
+---- [Code](https://github.com/BuiDuyet/ransom_DigitalDragonsCTF_2023/blob/main/solve2.py)
 ![anh_32x32](https://github.com/BuiDuyet/ransom_DigitalDragonsCTF_2023/assets/135353207/29014d9c-74b8-4b74-a75e-2cdcb1b3cd4d)
 ![image](https://github.com/BuiDuyet/ransom_DigitalDragonsCTF_2023/assets/135353207/78eed17f-a91e-4cd6-9721-a1fd926cf1ed)
 End.
